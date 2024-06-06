@@ -1,0 +1,13 @@
+<div class="home-container">
+    <h1>All Images</h1>
+    <div class="add-button-div"> 
+      <a routerLink="/add">Add New Image</a>
+    </div>
+    <div class="image-row">
+      <div *ngFor="let file of files" class="image-item">
+        <img [src]="file.fileUrl" [alt]="file.name" />
+        <p>{{ file.name }}</p>
+      </div>
+    </div>
+  </div>
+  
